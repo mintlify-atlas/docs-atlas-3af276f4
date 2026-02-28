@@ -1,0 +1,149 @@
+{
+  "projectType": "framework",
+  "projectName": "DeerFlow",
+  "projectDescription": "An open-source super agent harness that orchestrates sub-agents, memory, sandboxes, tools, and skills to handle complex multi-step tasks.",
+  "theme": "aspen",
+  "primaryColor": "#10B981",
+  "lightColor": "#34D399",
+  "darkColor": "#059669",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/agents",
+              "concepts/skills",
+              "concepts/tools",
+              "concepts/sandboxes",
+              "concepts/memory",
+              "concepts/subagents"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/overview",
+              "configuration/models",
+              "configuration/tools",
+              "configuration/sandbox",
+              "configuration/skills",
+              "configuration/mcp-servers",
+              "configuration/memory"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/docker-setup",
+              "guides/local-development",
+              "guides/creating-skills",
+              "guides/custom-tools",
+              "guides/mcp-integration",
+              "guides/file-uploads"
+            ]
+          },
+          {
+            "group": "Skills",
+            "pages": [
+              "skills/overview",
+              "skills/built-in",
+              "skills/creating-custom",
+              "skills/skill-format"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Backend API",
+            "pages": [
+              "api/gateway",
+              "api/models",
+              "api/threads",
+              "api/memory",
+              "api/skills",
+              "api/mcp"
+            ]
+          },
+          {
+            "group": "Agent System",
+            "pages": [
+              "api/lead-agent",
+              "api/middleware",
+              "api/subagents",
+              "api/thread-state"
+            ]
+          },
+          {
+            "group": "Tools",
+            "pages": [
+              "api/sandbox-tools",
+              "api/builtin-tools",
+              "api/community-tools"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Contributing",
+            "pages": [
+              "contributing/overview",
+              "contributing/development-setup",
+              "contributing/code-style",
+              "contributing/testing"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/middleware-chain",
+              "advanced/context-engineering",
+              "advanced/sandbox-providers",
+              "advanced/custom-agents"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-agent orchestration with sub-agent delegation",
+    "Sandboxed code execution environment",
+    "Extensible skills and tools system",
+    "Long-term memory across sessions",
+    "MCP server integration",
+    "Context engineering and summarization",
+    "LangGraph and LangChain powered",
+    "Docker and local execution modes"
+  ],
+  "publicApiSurface": [
+    "Lead Agent (make_lead_agent)",
+    "ThreadState",
+    "Middlewares (ThreadData, Uploads, Sandbox, Summarization, TodoList, Title, Memory, ViewImage, Clarification)",
+    "Sandbox Tools (bash, ls, read_file, write_file, str_replace)",
+    "Built-in Tools (present_files, ask_clarification, view_image, task)",
+    "Community Tools (Tavily, Jina AI, Firecrawl, DuckDuckGo)",
+    "Subagent System (general-purpose, bash agents)",
+    "Memory System",
+    "Skills Loader",
+    "Gateway API Endpoints (/api/models, /api/mcp/config, /api/skills, /api/memory, /api/threads)",
+    "MCP Adapters"
+  ]
+}
